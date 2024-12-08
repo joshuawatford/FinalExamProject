@@ -68,6 +68,12 @@ main{
     font-weight: bold;
   }
 }
+.booking{
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  gap: 10px;
+}
 h5 {
   color: #244a92;
   background-color: #e4e9fc; 
@@ -161,35 +167,42 @@ footer p{
 
 
 fieldset{
-  background-color: #CC7E6F;
-  margin-bottom: 7px;
-  border: .17rem solid #a4585b;
-  border-radius: 20px;
+  width: 100%;
+  border: 2px solid #234a95; 
+  border-radius: 3px; 
+  padding: 20px; 
+  position: relative; 
 }
 
 legend{
   font-weight: bolder;
-  color: #823639;
-  text-align: center;
+  color: #000;
+  text-align: left;
   font-size: 1.6rem;
   padding-left: .5rem;
   padding-right: .5rem;
-  border: .17rem solid #a4585b;
-  border-radius: 20px;
-  background-color: #E8B298;
+  
+  
+  
 }
 input[type="submit"]{
-  font-family: Palatino Linotype, serif;
-  font-weight: bolder;
-  color: #823639;
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+  width: 150px;
+  color: #000;
   text-align: center;
-  font-size: 1.6rem;
-  padding-left: .5rem;
-  padding-right: .5rem;
-  border: .17rem solid #a4585b;
-  border-radius: 20px;
-  background-color: #E8B298;
-
+  font-size: 20px;
+  padding: .5rem;
+  background-color: #688ed6;
+  border: none;
+  border-radius: 4px;
+}
+label {
+  display: block; 
+  margin-top: 10px; 
+  font-weight: bold; 
+  color: #234a95; 
 }
 
 
@@ -243,6 +256,12 @@ input[type="submit"]{
       gap: 0px;
     }
   }
+  .booking{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+  }
   
 }
 @media (max-width: 575px){
@@ -257,7 +276,7 @@ input[type="submit"]{
       display: flex;
       justify-content: center;
       align-items: center;
-      margin: 0 auto; /* Center the button within its container */
+      margin: 0 auto; 
     }
     .navbar-nav {
       gap: 0px;
