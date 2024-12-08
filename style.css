@@ -78,7 +78,7 @@ main{
 .doggie-bath, .doggie-nail-trim, .doggie-towel{
   width: 100%;
   height: auto;
-  
+  border-radius: 10px;
 }
 
 
@@ -111,6 +111,9 @@ footer p{
     font-family: "Sofia";
     font-weight: bolder;
   }
+  .groomoptions{
+    flex-direction: column;
+  }
 }
 @media (max-width: 576px) {
   .header-nav-container{
@@ -130,6 +133,7 @@ footer p{
       gap: 0px;
     }
   }
+  
 }
 @media (max-width: 575px){
   nav{
