@@ -53,17 +53,45 @@
 
       <!-- Main Content -->
       <main>
-        <section>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </section>
+        <fieldset id="userinfo">
+          <legend>Customer Information</legend>
+          <label for="fname">First Name:</label>
+          <input type="text" id="fname" name="first name">
+          <label for="lname">Last Name:</label>
+          <input type="text" id="lname" name="last name">
+          <label for="phone_number">Phone Number:</label> <!--change to be for pet-->
+          <input type="text" id="phone_number" name="user phone number">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="user passowrd">
+          <!--need set for date-->
+        </fieldset>
+        <fieldset id="specs">
+          <legend>Service Request</legend>
+            
 
-        <section>
-          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-        </section>
-        <section>
-          <p>Contact us today to book your first appointment and receive a <span>15% discount!</span>
-          </p>
-        </section>
+            <p>I would like the following service</p>
+            <label for="basic">Basic Groom</label>
+            <input type="radio" id="basic" name="choice">
+            <label for="full">Full Groom</label>
+            <input type="radio" id="full" name="choice">
+          <label for="pamper">Pampered Groom</label>
+          <input type="radio" id="pamper" name="choice">
+            <p></p>
+            <label for="select">Preferred Groomer</label>
+            <select id="select">
+              <option>Select Groomer</option>
+              <option>Karina</option>
+              <option>Ningning</option>
+              <option>Giselle</option>
+              <option>Winter</option>
+            </select>
+            <p></p>
+            <label for="comments">Special requests or instructions</label>
+            <textarea id="comments"></textarea>
+          </fieldset>
+        <input type="submit" id="submit" name="submit">
       </main>
 
       <!-- Footer -->

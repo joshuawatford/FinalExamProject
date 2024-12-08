@@ -78,6 +78,27 @@ h5 {
   margin: 0;
   
 }
+.maincontact {
+  display: flex;                
+  flex-direction: row;       
+  justify-content: space-evenly;      
+  align-items: center;          
+  height: auto;                
+  text-align: center;
+  
+}
+.info{
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.map{
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  padding: 10px;
+}
 .tableh5{
   text-align: center;
 }
@@ -136,6 +157,49 @@ footer p{
   margin: 0;
 }
 
+
+
+
+fieldset{
+  background-color: #CC7E6F;
+  margin-bottom: 7px;
+  border: .17rem solid #a4585b;
+  border-radius: 20px;
+}
+
+legend{
+  font-weight: bolder;
+  color: #823639;
+  text-align: center;
+  font-size: 1.6rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  border: .17rem solid #a4585b;
+  border-radius: 20px;
+  background-color: #E8B298;
+}
+input[type="submit"]{
+  font-family: Palatino Linotype, serif;
+  font-weight: bolder;
+  color: #823639;
+  text-align: center;
+  font-size: 1.6rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  border: .17rem solid #a4585b;
+  border-radius: 20px;
+  background-color: #E8B298;
+
+}
+
+
+
+
+
+
+
+
+
 @media (max-width: 768px) {
   .header-nav-container{
     display: flex;
@@ -153,7 +217,13 @@ footer p{
   .groomoptions{
     flex-direction: column;
   }
+  .maincontact {               
+    flex-direction: column;       
+             
+  }
 }
+
+
 @media (max-width: 576px) {
   .header-nav-container{
     display: flex;
@@ -166,6 +236,7 @@ footer p{
     
   }
   nav{
+    display: none;
     width: 100%;
     background-color: #9cb6e7;
     .navbar-nav {
@@ -176,9 +247,12 @@ footer p{
 }
 @media (max-width: 575px){
   nav{
+    display: flex;
     width: 100px;
     justify-content: center;
-    
+    a{
+      color: #244a92 !important;
+      }
     .navbar-toggler {
       display: flex;
       justify-content: center;
