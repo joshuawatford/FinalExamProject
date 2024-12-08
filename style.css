@@ -68,7 +68,14 @@ main{
     font-weight: bold;
   }
 }
-
+h5 {
+  color: #244a92;
+  background-color: #e4e9fc; 
+  font-family: "Markazi Text", serif;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0;  
+}
 .groomoptions{
   flex-direction: row;
   padding: 10px;
@@ -80,8 +87,31 @@ main{
   height: auto;
   border-radius: 10px;
 }
+.groomdetails{
+  list-style-type: square;
+  margin-top: 10px;
+  
+}
+table {
+  font-family: "Markazi Text", serif;
+  width: 100%; /* Makes the table span the full width of its container */
+  border-collapse: collapse; /* Combines borders of adjacent cells */
+}
 
+th, td {
+  border: 1px solid #6b86b9; /* Adds a border around table cells */
+  padding: 8px; /* Adds padding inside cells */
+  text-align: left; /* Aligns text to the left inside cells */
+}
+td{
+  background-color: #83a4e2;
+}
 
+th {
+  background-color: #234b95; /* Sets a background color for header cells */
+  font-weight: bold; /* Makes header text bold */
+  border-left: ;
+}
 footer{
   display: flex;
   flex-direction: column;
