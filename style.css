@@ -234,6 +234,9 @@ label {
     flex-direction: column;       
              
   }
+  .booking{
+    flex-direction: column;
+  }
 }
 
 
@@ -256,12 +259,7 @@ label {
       gap: 0px;
     }
   }
-  .booking{
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    gap: 10px;
-  }
+
   
 }
 @media (max-width: 575px){
