@@ -1,0 +1,131 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+/*header and footer background #9cb6e7
+header font Sofia 
+header and footer font color #244a92
+nav background color #234a95
+nav font color when over 568 white when under 568 black
+main body background color #e4e9fc
+footer font  trirong*/
+
+.header-nav-container{
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  background-color: #ffff00;
+}
+header {
+  display: flex;
+  width: 300px;
+  justify-content: center;
+  text-align: center;
+  background-color: #9cb6e7;
+  color: #244a92;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  font-family: "Wittgenstein";
+  h6{
+    font-family: "Lexend", sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+  }
+}
+nav{
+  display: flex;
+  width: 100%;
+  background-color: #234a95;
+  font-weight: bold;
+  a{
+  color: white !important;
+  }
+  .navbar-nav {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    width: 100%;
+    gap: 65px;
+  }
+}
+img{
+  width: 100%;
+  height: auto;
+}
+main{
+  display: flex;
+  flex-direction: column;
+  background-color: #e4e9fc;
+  font-family: "Markazi Text", serif;
+  span{
+    color: #244a92;
+    font-size: 25px;
+    font-weight: bold;
+  }
+}
+footer{
+  display: flex;
+  flex-direction: column;
+  color: #244a92;;
+  background-color: #9cb6e7;
+  font-family: "Trirong", serif;
+  font-weight: bold;
+  .p{
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-nav-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  header{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    font-family: "Sofia";
+    font-weight: bolder;
+  }
+}
+@media (max-width: 576px) {
+  .header-nav-container{
+    display: flex;
+    flex-direction: row-reverse;
+    height: auto;
+  }
+  header {
+    width: 100%;
+    align-items: center;
+    
+  }
+  nav{
+    width: 100%;
+    background-color: #9cb6e7;
+    .navbar-nav {
+      gap: 0px;
+    }
+  }
+}
+@media (max-width: 575px){
+  nav{
+    width: 100px;
+    justify-content: center;
+    
+    .navbar-toggler {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto; /* Center the button within its container */
+    }
+    .navbar-nav {
+      gap: 0px;
+    }
+  }
+}
